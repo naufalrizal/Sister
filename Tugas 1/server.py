@@ -35,6 +35,7 @@ try:
         	for socket in input:
             	# accept client and add it to list input
             		if socket == server_socket:
+            			print type(socket)
                 		client_socket, client_address = server_socket.accept()
 		                input_list.append(client_socket)
         		        print "Accepted client: ", client_address
